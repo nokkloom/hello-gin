@@ -4,7 +4,6 @@ kind: Deployment
 metadata:
   name: hello-gin
 spec:
-  externalUrl: "http://hello-n6ka.codemowers.ee/"
   replicas: 3
   selector:
     matchLabels:
