@@ -19,7 +19,7 @@ spec:
           service:
             name: hello-gin
             port:
-              name: http
+              number: 8000
   tls:
   - hosts:
     - "*.codemowers.ee"
