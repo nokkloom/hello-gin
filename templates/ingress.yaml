@@ -10,7 +10,7 @@ metadata:
     external-dns.alpha.kubernetes.io/target: traefik.codemowers.ee
 spec:
   rules:
-  - host: hello-{{ .Values.username }}.codemowers.ee
+  - host: hello-n6ka.codemowers.ee
     http:
       paths:
       - pathType: Prefix
