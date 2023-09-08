@@ -4,10 +4,6 @@ kind: Deployment
 metadata:
   name: hello-gin
 spec:
-  securityContext:
-    runAsUser: 1000
-    runAsGroup: 3000
-    fsGroup: 2000
   replicas: 3
   selector:
     matchLabels:
@@ -17,6 +13,10 @@ spec:
       labels:
         app: hello-gin
     spec:
+      securityContext:
+        runAsUser: 1000
+        runAsGroup: 3000
+        fsGroup: 2000
       enableServiceLinks: false
       imagePullSecrets:
         - name: imgcred
